@@ -5,8 +5,6 @@ Version:	1.3
 Release:	1
 License:	GPL
 Group:		X11/Applications/Multimedia
-Group(de):	X11/Applikationen/Multimedia
-Group(pl):	X11/Aplikacje/Multimedia
 Source0:	http://home1.gte.net/mbardeen/blurscope/blur_scope_max-%{version}.tar.gz
 URL:		http://home1.gte.net/mbardeen/blurscope/
 Requires:	xmms
