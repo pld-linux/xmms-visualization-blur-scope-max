@@ -7,6 +7,7 @@ License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://home1.gte.net/mbardeen/blurscope/blur_scope_max-%{version}.tar.gz
 Patch0:		blur_scope_max-no_asm.patch
+Patch1:		blur_scope_max-no_dga.patch
 URL:		http://home1.gte.net/mbardeen/blurscope/
 Requires:	xmms
 BuildRequires:	xmms-devel >= 1.2.3
@@ -31,6 +32,7 @@ Blur Scope MAX.
 %ifnarch %{x86}
 %patch0
 %endif
+%patch1
 
 %build
 rm -f missing
