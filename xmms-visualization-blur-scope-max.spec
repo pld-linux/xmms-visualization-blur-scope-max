@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://home1.gte.net/mbardeen/blurscope/blur_scope_max-%{version}.tar.gz
+# Source0-md5:	2ac23ec72d083ba81babc66f9f8301c9
 Patch0:		blur_scope_max-no_asm.patch
 Patch1:		blur_scope_max-no_dga.patch
 Patch2:		%{name}-AM_PROG_AS.patch
