@@ -11,6 +11,9 @@ Requires:	xmms
 BuildRequires:	xmms-devel >= 1.2.3
 BuildRequires:	glib-devel >= 1.2.2
 BuildRequires:	gtk+-devel >= 1.2.2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -26,6 +29,11 @@ Blur Scope MAX.
 %setup -q -n blur_scope_max-%{version}
 
 %build
+rm -f missing
+%{__libtoolize}
+aclocal
+%{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
