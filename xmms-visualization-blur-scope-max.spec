@@ -3,10 +3,10 @@ Summary(pl):	Blur Scope MAX
 Name:		xmms-visualization-blur-scope-max
 Version:	1.3
 Release:	1
+License:	GPL
 Group:		X11/Applications/Multimedia
 Group(de):	X11/Applikationen/Multimedia
 Group(pl):	X11/Aplikacje/Multimedia
-License:	GPL
 Source0:	http://home1.gte.net/mbardeen/blurscope/blur_scope_max-%{version}.tar.gz
 URL:		http://home1.gte.net/mbardeen/blurscope/
 Requires:	xmms
@@ -19,10 +19,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define		_mandir		%{_prefix}/man
 
 %description
-Blur Scope MAX
+Blur Scope MAX.
 
 %description -l pl
-Blur Scope MAX
+Blur Scope MAX.
 
 %prep
 %setup -q -n blur_scope_max-%{version}
