@@ -10,13 +10,11 @@ Patch0:		blur_scope_max-no_asm.patch
 Patch1:		blur_scope_max-no_dga.patch
 Patch2:		%{name}-AM_PROG_AS.patch
 URL:		http://home1.gte.net/mbardeen/blurscope/
-Requires:	xmms
-BuildRequires:	xmms-devel >= 1.2.3
-BuildRequires:	glib-devel >= 1.2.2
-BuildRequires:	gtk+-devel >= 1.2.2
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	libtool
+BuildRequires:	xmms-devel >= 1.2.3
+Requires:	xmms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define         _xmms_plugin_dir        %(xmms-config --visualization-plugin-dir)
