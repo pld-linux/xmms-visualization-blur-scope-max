@@ -2,7 +2,7 @@ Summary:	Blur Scope MAX
 Summary(pl):	Blur Scope MAX
 Name:		xmms-visualization-blur-scope-max
 Version:	1.3
-Release:	2
+Release:	3
 License:	GPL
 Group:		X11/Applications/Multimedia
 Source0:	http://home1.gte.net/mbardeen/blurscope/blur_scope_max-%{version}.tar.gz
@@ -11,16 +11,15 @@ Patch0:		blur_scope_max-no_asm.patch
 Patch1:		blur_scope_max-no_dga.patch
 Patch2:		%{name}-AM_PROG_AS.patch
 URL:		http://home1.gte.net/mbardeen/blurscope/
-Requires:	xmms
-BuildRequires:	xmms-devel >= 1.2.3
-BuildRequires:	glib-devel >= 1.2.2
-BuildRequires:	gtk+-devel >= 1.2.2
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	glib-devel >= 1.2.2
+BuildRequires:	gtk+-devel >= 1.2.2
 BuildRequires:	libtool
+BuildRequires:	rpmbuild(macros) >= 1.125
+BuildRequires:	xmms-devel >= 1.2.3
+Requires:	xmms
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
-
-%define         _xmms_plugin_dir        %(xmms-config --visualization-plugin-dir)
 
 %description
 Blur Scope MAX.
@@ -50,11 +49,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT \
-	libdir=%{_xmms_plugin_dir}
+	libdir=%{xmms_visualization_plugindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %doc AUTHORS NEWS README ChangeLog
-%attr(755,root,root) %{_xmms_plugin_dir}/*.so
+%attr(755,root,root) %{xmms_visualization_plugindir}/*.so
