@@ -29,7 +29,7 @@ Blur Scope MAX.
 
 %prep
 %setup -q -n blur_scope_max-%{version}
-%ifnarch %{x86}
+%ifnarch %{ix86}
 %patch0
 %endif
 %patch1
