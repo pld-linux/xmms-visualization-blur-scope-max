@@ -10,6 +10,7 @@ Source0:	http://home1.gte.net/mbardeen/blurscope/blur_scope_max-%{version}.tar.g
 Patch0:		blur_scope_max-no_asm.patch
 Patch1:		blur_scope_max-no_dga.patch
 Patch2:		%{name}-AM_PROG_AS.patch
+Patch3:		%{name}-gcc33.patch
 URL:		http://home1.gte.net/mbardeen/blurscope/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -34,6 +35,7 @@ Blur Scope MAX.
 %endif
 %patch1
 %patch2 -p1
+%patch3 -p1
 
 %build
 rm -f missing
