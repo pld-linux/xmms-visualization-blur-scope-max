@@ -1,0 +1,44 @@
+diff -urN aaa/blur_scope_max-1.3/blur_scope.c blur_scope_max-1.3/blur_scope.c
+--- aaa/blur_scope_max-1.3/blur_scope.c	2000-04-06 01:26:29.000000000 +0200
++++ blur_scope_max-1.3/blur_scope.c	2003-08-05 01:42:42.000000000 +0200
+@@ -2731,38 +2731,9 @@
+ 	gtk_window_set_title(GTK_WINDOW(dialog), "About Blur Scope MAX "VERSION);
+ 	gtk_container_border_width(GTK_CONTAINER(dialog), 5);
+ 	label = gtk_label_new(
+-			"Blur Scope MAX- Visualization Plugin for XMMS.\n\
+-				by Matt Bardeen <mbardeen@gte.net> (and other copyright holders)\n\
+-				Copyright (C) 1998-1999  Peter Alm, Mikael Alm, Olle Hallnas, Thomas Nilsson and 4Front Technologies. \n\
+-				Modified blur routines are Copyright (C) 1999 Matt Bardeen.\n\
+-				Cthugha functions are Copyright 1995-1997 by Harald Deischinger, \n\
+-				and credit also goes to Cthugha and Torps Productions.");
++			"Blur Scope MAX- Visualization Plugin for XMMS.\nby Matt Bardeen <mbardeen@gte.net> (and other copyright holders)\nCopyright (C) 1998-1999  Peter Alm, Mikael Alm, Olle Hallnas, Thomas Nilsson and 4Front Technologies. \nModified blur routines are Copyright (C) 1999 Matt Bardeen.\nCthugha functions are Copyright 1995-1997 by Harald Deischinger, \nand credit also goes to Cthugha and Torps Productions.");
+ 	label1 = gtk_label_new(
+-			"Instructions:\n\
+-				Right clicking anywhere in the draw window will switch to the next preset \n\
+-					Left clicking will bring up the configuration screen.\n\
+-					\n\
+-					Configuration Screen - \n\
+-					The General tab represents what is being drawn on the screen.\n\
+-					Most of this is pretty self explanatory, but there are some things to note:\n\
+-				-Double Sizing your window *will* slow down your system.\n\
+-				-The Stereo drawing fuctions are only available in double size mode. \n\
+-				I don't like scaling functions, I feel they detract from the true waveform.\n\
+-				Therefore, I will turncate the waveform before I scale it. Stereo mode just doesn't
+-				look right in less then Double size mode.
+-				- The Circular Smoke and Spiral blur functions are slower then the other options.\n\
+-				I've tried to optimize these as much as possible, but awesome visuals come with a price.\n\
+-				\n\
+-				The Color tab contains all the color options.\n\
+-				\n\
+-				The Presets tab is your custom list of presets. You can only have 10 presets as of now. \n\
+-				I may change this later on if I get enough complaints about it.\n\
+-					To create a preset, simply find an effect that you like, type in a name in the text box,\n\
+-					and click on Add or Replace.\n\
+-					- Add will add the effect that is showing in the draw window to the end your preset list.\n\
+-					- Replace will replace the current preset with the effect that is showing in the draw window.\n\
+-					- Delete will delete the current preset.
+-					");
++			"Instructions:\nRight clicking anywhere in the draw window will switch to the next preset \nLeft clicking will bring up the configuration screen.\n\nConfiguration Screen - \nThe General tab represents what is being drawn on the screen.\nMost of this is pretty self explanatory, but there are some things to note:\n-Double Sizing your window *will* slow down your system.\n-The Stereo drawing fuctions are only available in double size mode. \nI don't like scaling functions, I feel they detract from the true waveform.\nTherefore, I will turncate the waveform before I scale it. Stereo mode just doesn't\nlook right in less then Double size mode.\n- The Circular Smoke and Spiral blur functions are slower then the other options.\nI've tried to optimize these as much as possible, but awesome visuals come with a price.\n\nThe Color tab contains all the color options.\n\nThe Presets tab is your custom list of presets. You can only have 10 presets as of now. \nI may change this later on if I get enough complaints about it.\nTo create a preset, simply find an effect that you like, type in a name in the text box,\nand click on Add or Replace.\n- Add will add the effect that is showing in the draw window to the end your preset list.\n- Replace will replace the current preset with the effect that is showing in the draw window.\n- Delete will delete the current preset.");
+ 	
+ 	gtk_box_pack_start(GTK_BOX(GTK_DIALOG(dialog)->vbox), label, TRUE, TRUE, 0);
+ 	gtk_widget_show(label);
