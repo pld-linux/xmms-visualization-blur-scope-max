@@ -26,15 +26,15 @@ Blur Scope MAX.
 %setup -q -n blur_scope_max-%{version}
 
 %build
-%configure 
-%{__make} 
+%configure
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-gzip -9nf AUTHORS NEWS README ChangeLog 
+gzip -9nf AUTHORS NEWS README ChangeLog
 
 %clean
 rm -rf $RPM_BUILD_ROOT
