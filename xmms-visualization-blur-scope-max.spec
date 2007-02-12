@@ -1,5 +1,5 @@
 Summary:	Blur Scope MAX
-Summary(pl.UTF-8):   Blur Scope MAX
+Summary(pl.UTF-8):	Blur Scope MAX
 Name:		xmms-visualization-blur-scope-max
 Version:	1.3
 Release:	4
