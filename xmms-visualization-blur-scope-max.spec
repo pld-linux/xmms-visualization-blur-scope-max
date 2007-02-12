@@ -1,5 +1,5 @@
 Summary:	Blur Scope MAX
-Summary(pl):	Blur Scope MAX
+Summary(pl.UTF-8):   Blur Scope MAX
 Name:		xmms-visualization-blur-scope-max
 Version:	1.3
 Release:	4
@@ -26,7 +26,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Blur Scope MAX.
 
-%description -l pl
+%description -l pl.UTF-8
 Blur Scope MAX.
 
 %prep
